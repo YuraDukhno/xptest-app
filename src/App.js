@@ -1,20 +1,15 @@
 
-import './App.css';
+import './App.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container } from 'react-bootstrap';
-import { employees } from "./store/employeeReducer";
+import Employees from './containers/employees';
 
 function App() {
-
-  const dispatch = useDispatch()
- 
-  const employees = useSelector( state => state.employees.employees);
-  console.log(employees)
-
-
   return (
     <div className="App">
-
+      <Container className="pt-5">
+        <Employees />
+      </Container>
     </div>
   );
 }

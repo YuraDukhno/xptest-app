@@ -1,0 +1,18 @@
+@import-normalize; /* bring in normalize.css styles */
+
+$theme-colors: (
+  'success': #27d96e,
+	'warning': #f1a953
+);
+
+@import '~bootstrap/scss/bootstrap';
+
+html {
+  direction: rtl;
+}
+
+.App {
+  background-color: lightgray;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
